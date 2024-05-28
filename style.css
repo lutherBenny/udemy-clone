@@ -70,7 +70,7 @@ body{
 .mylearning:hover .mylearning__popup{
     display: block;
 }
-.categeries{
+.categories{
     display: flex;
   justify-content: space-around;
   border-bottom: solid black 1px;
@@ -78,16 +78,18 @@ body{
   padding: 10px;
  
 }
-.categeries p{
+.categories p{
     background-color: #5C55D9;
     color: white;
     padding: 10px;
     border-radius: 30px;
     border: solid #a435f0 1px;
-}
-.categeries p:hover{
     cursor: pointer;
-    transition: 1s;
+    border: solid #a435f0 1px;
+}
+.categories p:hover{ 
+    cursor: pointer;
+    transition: 2s;
     background-color: transparent;
     color: black;
     border: solid #a435f0 1px;
