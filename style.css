@@ -12,6 +12,10 @@ body{
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
    
 }
 .navbar__s1__title{
@@ -32,6 +36,8 @@ body{
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: transparent;
+   
    
 }
 .navbar__s2 input:focus{
@@ -43,6 +49,26 @@ body{
     gap: 10px;
     flex-wrap: wrap;
     align-items: center; 
+}
+
+/*my learning */
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    padding: 10px;
+    top: 150%;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 .categeries{
     display: flex;
@@ -58,10 +84,30 @@ body{
     padding: 10px;
     border-radius: 30px;
 }
+.categeries p:hover{
+    cursor: pointer;
+   
+}
 .sale-image img{
     width: 100%;
    
 }
+.sale-image{
+    position: relative;
+}
+
+.sale__image__offer {
+    width: 30%;
+    border: solid black 2px;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    background-color: white;
+    left: 40px;
+}
+
+
+
 .recommended{
     padding: 10px;
 }
@@ -97,6 +143,11 @@ body{
     flex-basis: 25%;
     
 }
+.topics__container p:hover{
+    cursor: pointer;
+    color: gray;
+    
+}
 .popular__container{
     display: flex;
     justify-content: space-between;
@@ -112,19 +163,31 @@ body{
 .footer{
     padding: 30px;
     background-color: black;
-    color: white;
+   color: white;
    
 }
 .footer__one{
     display: flex;
     gap: 40px;
    padding: 40px;
+  
 }
 .footer__two{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.footer__one__s1 p:hover{
+    cursor: pointer;
+    color: gray;
+   
+}
+.footer__one__s2 p:hover{
+    cursor: pointer;
+    color: gray;
+   
+}
+    
     
 
 
